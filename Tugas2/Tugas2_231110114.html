@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Car Rental</title>
+
+   <style>
+     #search {
+       background: url("tifosijayajayajaya.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 30em;
+       color: white;
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .title {
+       width: 100%;
+       text-align: center;
+     }
+     .title h1 {
+       font-size: 28px;
+     }
+     .title p {
+       font-size: 18px;
+     }
+     .title hr {
+       width: 50%;
+       margin: 20px auto;
+       opacity: 0.5;
+     }
+
+     .form-container {
+       background-color: rgba(0, 0, 0, 0.5);
+       padding: 20px;
+       border-radius: 10px;
+       margin-top: 20px;
+       display: flex;
+       align-items: center;
+       gap: 20px;
+     }
+     .form-group {
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       text-align: left;
+     }
+     button {
+       padding: 8px 25px;
+       background-color: #ff6600;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       align-self: flex-end;
+     }
+     button:hover {
+       background-color: #126983;
+     }
+   </style>
+ </head>
+ <body>
+   <div id="search">
+     <div class="title">
+       <h1>Captain AmeriCar's</h1>
+       <p>Find your best rental car here</p>
+       <hr />
+     </div>
+     <div class="form-container">
+       <div class="form-group">
+         <label for="origin">Your Rental Location</label>
+         <select name="origin" id="origin">
+           <option value="JKT">Jakarta</option>
+           <option value="BDO">Bandung</option>
+           <option value="DPS">Bali</option>
+           <option value="DIY">Yogyakarta</option>
+           <option value="SOC">Solo</option>
+           <option value="SBY">Surabaya</option>
+           <option value="SMG">Semarang</option>
+         </select>
+       </div>
+       <div class="form-group">
+        <label for="date">Rental Start Date</label>
+        <input type="date" />
+      </div>
+      <div class="form-group">
+        <label for="time">Start Time</label>
+        <input type="time" />
+      </div>
+       <div class="form-group">
+         <label for="date">Rental End Date</label>
+         <input type="date" />
+       </div>
+       <div class="form-group">
+        <label for="time">End Time</label>
+        <input type="time" />
+      </div>
+       <button>Search</button>
+     </div>
+   </div>
+ </body>
+</html>
+
+<style>
+  .car-list {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+  }
+
+  .car-card {
+      background-color: #440606;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      text-align: center;
+      width: 260px;
+  }
+
+  .car-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  .car-type {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: white;
+  }
+
+  .car-description {
+      color: #ffffff;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+  }
+
+  .car-price {
+      font-size: 1em;
+      color: #ffffff;
+      margin-bottom: 15px;
+  }
+
+  .rent-button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      text-decoration: none;
+  }
+  .rent-button:hover {
+      background-color: #126983;
+  }
+</style>
+</head>
+<body>
+
+<div class="car-list">
+  <div class="car-card">
+      <img src="convertible.png" alt="Convertible">
+      <div class="car-type">Convertible</div>
+      <div class="car-description">Suitable in a relaxed and fun situation.</div>
+      <div class="car-price">Rp. 600.000/day</div>
+      <a href="#" class="rent-button">Rent Now</a>
+  </div>
+
+  <div class="car-card">
+      <img src="sport.png" alt="Sport">
+      <div class="car-type">Sport</div>
+      <div class="car-description">To enjoy extreme driving pleasure.</div>
+      <div class="car-price">Rp. 750.000/day</div>
+      <a href="#" class="rent-button">Rent Now</a>
+  </div>
+
+  <div class="car-card">
+      <img src="luxury.png" alt="Luxury">
+      <div class="car-type">Luxury</div>
+      <div class="car-description">Create an impression of elegance.</div>
+      <div class="car-price">Rp. 800.000/day</div>
+      <a href="#" class="rent-button">Rent Now</a>
+  </div>
+
+  <div class="car-card">
+      <img src="minivan.png" alt="Minivan">
+      <div class="car-type">Minivan</div>
+      <div class="car-description">Spacious, practical and comfortable space.</div>
+      <div class="car-price">Rp. 480.000/day</div>
+      <a href="#" class="rent-button">Rent Now</a>
+  </div>
+  
+</div>
+</body>
+</html>
